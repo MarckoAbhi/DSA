@@ -1,59 +1,44 @@
 import array as arr
 
-arr1 = [2, 12,11,8,9,7,15]
+arr1 = [2, 12,11]
 
 print(arr1)
-# print element by indexing number
-print(arr1[4])
 
-# length of array
-print(len(arr1))
-
-#slicing 
-y=slice(4)
-print(arr1[y])
-# append is use to add single element at the end of array
-
+#i append is use to add single element at the end of array
 arr1.append(3)
 print(arr1)
 
-# extend is use to add 
-B=[1,4,5,10,14,6]
+# ii  add four element to array1
+B=[1,4,5,10]
 arr1.extend(B)
 print(arr1)
-# to give a new memory location of array B
-ac=B.copy()
-print(ac)
-# insert is use to add element anywhere
-arr1.insert(2,13)
-print(arr1)
-# sorting the element
-arr1.sort()
-print(arr1)
-# pop is use to delete element by indexing number
-# if we not write element index number in pop than it will remove the last element of array
-arr1.pop(3)
-print(arr1)
-# remove is use to remove element by name/value
-arr1.remove(12)
+
+# iii add element to the fourth position
+arr1.insert(3, 13)
 print(arr1)
 
-c=[11, 20, 22,24]
-# loops in array
-b=0
-while b<= c[0]:
-    print(b)
-    b = b+1
-#for loop
-for x in c:
-    print(x)
-    x=++1
-    
- #creating array and define length and element by user   
-h=arr.array('i',[])
-n=int(input("enter the length of array:"))
-for j in range(n):
-    k=int(input("enter the element"))
-    h.append(k)
-    print(h)
-    
+# iv delete seventh element from array1
+arr1.pop(6)
+print(arr1)
+
+#v Remove last element and return it
+print(arr1.pop())
+
+#create two arrays having three element each and merge all three arrray
+arr2=[14, 15, 18]
+arr3 = [22, 26,29]
+
+merged_array= arr1 + arr2+ arr3
+
+print(merged_array)
+
+#determine the length of the new array formed
+print(len(merged_array))
+
+#print the ninth element of new array
+print(merged_array[8])
+
+
+
+
+
