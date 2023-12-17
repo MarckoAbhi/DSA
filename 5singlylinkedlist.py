@@ -35,7 +35,7 @@ class SinglyLinkedList:
             self.head = new_node
             return
         temp = self.head
-        for _ in range(position - 2):
+        for i in range(position - 2):
             if temp is None:
                 print("Invalid position.")
                 return
@@ -70,7 +70,7 @@ class SinglyLinkedList:
         if not self.is_empty() and position > 0:
             temp = self.head
             prev = None
-            for _ in range(position - 1):
+            for i in range(position - 1):
                 if temp is None:
                     print("Invalid position.")
                     return
@@ -95,21 +95,21 @@ class SinglyLinkedList:
             print("Singly linked list is empty.")
 
 # Example usage
-if __name__ == "__main__":
-    sll = SinglyLinkedList()
 
-    sll.insert_at_beginning(21)
-    sll.insert_at_beginning(9)
-    sll.insert_at_end(12)
-    sll.insert_at_end(14)
-    sll.insert_at_position(17, 3)
-    sll.display()
+sll = SinglyLinkedList()
 
-    sll.delete_at_beginning()
-    sll.display()
+sll.insert_at_beginning(21)
+sll.insert_at_beginning(9)
+sll.insert_at_end(12)
+sll.insert_at_end(14)
+sll.insert_at_position(17, 3)
+sll.display()
 
-    sll.delete_at_end()
-    sll.display()
+sll.delete_at_beginning()
+sll.display()
 
-    sll.delete_at_position(2)
-    sll.display()
+sll.delete_at_end()
+sll.display()
+
+sll.delete_at_position(2)
+sll.display()
