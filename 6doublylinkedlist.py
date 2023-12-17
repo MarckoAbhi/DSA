@@ -41,7 +41,7 @@ class DoublyLinkedList:
             self.head = new_node
             return
         temp = self.head
-        for _ in range(position - 2):
+        for i in range(position - 2):
             if temp is None:
                 print("Invalid position.")
                 return
@@ -78,7 +78,7 @@ class DoublyLinkedList:
     def delete_at_position(self, position):
         if not self.is_empty() and position > 0:
             temp = self.head
-            for _ in range(position - 1):
+            for i in range(position - 1):
                 if temp is None:
                     print("Invalid position.")
                     return
@@ -103,21 +103,20 @@ class DoublyLinkedList:
         else:
             print("Doubly linked list is empty.")
 
-# Example usage
-if __name__ == "__main__":
-    dll = DoublyLinkedList()
 
-    dll.insert_at_beginning(10)
-    dll.insert_at_beginning(5)
-    dll.insert_at_end(20)
-    dll.insert_at_position(15, 2)
-    dll.display()
+dll = DoublyLinkedList()
 
-    dll.delete_at_beginning()
-    dll.display()
+dll.insert_at_beginning(10)
+dll.insert_at_beginning(5)
+dll.insert_at_end(20)
+dll.insert_at_position(15, 2)
+dll.display()
 
-    dll.delete_at_end()
-    dll.display()
+dll.delete_at_beginning()
+dll.display()
 
-    dll.delete_at_position(2)
-    dll.display()
+dll.delete_at_end()
+dll.display()
+
+dll.delete_at_position(2)
+dll.display()
