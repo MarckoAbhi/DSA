@@ -128,25 +128,24 @@ class CircularLinkedList:
         else:
             print("Circular linked list is empty.")
 
-# Example usage
-if __name__ == "__main__":
-    my_circular_list = CircularLinkedList()
 
-    my_circular_list.insert_at_beginning(10)
-    my_circular_list.insert_at_beginning(5)
-    my_circular_list.insert_at_end(20)
-    my_circular_list.display()
+my_circular_list = CircularLinkedList()
 
-    my_circular_list.delete_at_beginning()
-    my_circular_list.display()
+my_circular_list.insert_at_beginning(10)
+my_circular_list.insert_at_beginning(5)
+my_circular_list.insert_at_end(20)
+my_circular_list.display()
 
-    my_circular_list.delete_at_end()
-    my_circular_list.display()
-    my_circular_list.insert_at_position(1,30)
-    my_circular_list.insert_at_position(2,40) 
-    my_circular_list.insert_at_position(3,50)
-    my_circular_list.display()
-    my_circular_list.delete_from_position(0)
-    my_circular_list.display()
+my_circular_list.delete_at_beginning()
+my_circular_list.display()
+
+my_circular_list.delete_at_end()
+my_circular_list.display()
+my_circular_list.insert_at_position(1,30)
+my_circular_list.insert_at_position(2,40) 
+my_circular_list.insert_at_position(3,50)
+my_circular_list.display()
+my_circular_list.delete_from_position(0)
+my_circular_list.display()
     
     
