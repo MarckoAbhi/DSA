@@ -8,4 +8,4 @@ n=3
 TOH(n, 'A', 'B', 'C',)
 print("Hii All Setup is Okay")
 print("This code for TOH")
-print("Auto Update in one minute,if any changes")
+print("Auto Update in one minute,if any changes"
