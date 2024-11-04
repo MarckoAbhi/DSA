@@ -6,3 +6,4 @@ def TOH(n, from_rod, to_rod,aux_rod):
     TOH(n-1,aux_rod, to_rod, from_rod)
 n=3
 TOH(n, 'A', 'B', 'C',)
+print("Hii All Setup is Okay")
